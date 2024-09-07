@@ -1,0 +1,178 @@
+/* Font Face Declarations */
+@font-face {
+  font-family: "Neo Sans Arabic";
+  src: url("/assets/fonts/NeoSansArabic-Regular.woff2") format("woff2"),
+    url("/assets/fonts/NeoSansArabic-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neo Sans Arabic";
+  src: url("/assets/fonts/NeoSansArabic-Bold.woff2") format("woff2"),
+    url("/assets/fonts/NeoSansArabic-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+h2 {
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 1rem;
+  font-size: x-large;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+p {
+  color: rgba(165, 167, 171, 1);
+  font-size: large;
+  margin-bottom: 2.5rem;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+  height: 120%;
+  padding: 2rem;
+  border-radius: 0.45rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    45deg,
+    rgba(9, 119, 248, 0.2) 0%,
+    rgba(255, 255, 255, 1) 25%,
+    rgba(255, 255, 255, 1) 75%,
+    rgba(9, 119, 248, 0.2) 100%
+  );
+}
+
+.close-btn {
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  border: 2px solid rgba(244, 244, 244, 1);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -2rem;
+  color: rgba(132, 146, 158, 1);
+  font-size: medium;
+  font-size: 1.5rem;
+}
+.close-btn:hover {
+  color: rgba(255, 75, 85, 1);
+}
+
+.back-btn {
+  position: absolute; /* Allows positioning based on the container */
+  right: 2rem; /* Adjust based on how far from the right edge you want it */
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  border: none; /* Removes the border */
+  background-color: transparent; /* Sets the background color to gray */
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(131, 137, 159, 1); /* Sets the text color; adjust if needed */
+  font-size: medium;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.fa-arrow-right {
+  margin-left: 0.5rem;
+  font-size: medium;
+  font-size: 1.5rem;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.option {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid lightgray;
+  border-radius: 0.5remk;
+  transition: background-color 0.3s ease;
+  width: 100px;
+  height: 150px;
+  text-align: center;
+}
+
+.option.selected {
+  background-color: #e6f7ff;
+  border-color: #4f9eff;
+}
+
+/* Center the icon */
+.icon i {
+  margin-top: 2rem;
+  font-size: 3rem;
+  color: gray;
+  margin-bottom: 2rem;
+  transition: box-shadow 0.3s ease;
+}
+.icon i:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.option.selected .icon i.fa-home {
+  color: rgba(62, 151, 255, 1) !important;
+}
+
+.option.selected .icon i.fa-truck {
+  color: rgba(255, 189, 102, 1) !important;
+}
+
+.option.selected .icon i.fa-users {
+  color: rgba(103, 70, 246, 1) !important; /* Custom color for users icon */
+}
+.option.selected .icon i.fa-film {
+  color: rgba(255, 189, 102, 1) !important;
+}
+
+.option.selected .icon i.fa-landmark {
+  color: rgba(62, 151, 255, 1) !important;
+}
+
+.option.selected .icon i.fa-building {
+  color: rgba(72, 178, 154, 1) !important; /* Custom color for users icon */
+}
+/* Label below the icon */
+.label {
+  margin-top: 3rem;
+  font-size: 1rem;
+  font-weight: 900;
+  color: black;
+}
+
+.start-now {
+  background-color: #3a68a0;
+  color: white;
+  padding: 0.7rem 2.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+}
+.fa-circle-arrow-right {
+  margin-left: 0.3rem;
+}
+
+.start-now:disabled {
+  background-color: rgba(176, 187, 213, 1);
+  cursor: not-allowed;
+}
+
+.footer-note {
+  margin-top: 1.5rem;
+  color: gray;
+  margin-bottom: 5rem;
+}

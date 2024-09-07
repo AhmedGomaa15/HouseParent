@@ -1,0 +1,40 @@
+<div class="container">
+  <button class="close-btn">x</button>
+  <!-- Show back button only on step 2 -->
+  <button *ngIf="currentStep === 2" class="back-btn" (click)="goBack()">
+    العودة <i class="fa-solid fa-arrow-right"></i>
+  </button>
+
+  <!-- Dynamic h2 based on the current step -->
+  <h2>{{ headerText }}</h2>
+  <p *ngIf="currentStep === 1">قم بإختيار مصدر شققك السكنية كل تستكمل باقي الخطوات</p>
+  <p *ngIf="currentStep === 2">اختر نوع المنزل المناسب لاستكمال باقي الخطوات</p>
+
+  <div class="options">
+    <!-- Loop through the options array using *ngFor -->
+    <div
+      class="option"
+      *ngFor="let option of options"
+      [ngClass]="{ selected: selectedOption === option }"
+      (click)="selectOption(option)"
+    >
+      <div class="icon">
+        <!-- Dynamically bind the icon class here -->
+        <i [ngClass]="option.iconClass"></i>
+      </div>
+      <span>{{ option.label }}</span>
+    </div>
+  </div>
+
+  <!-- Dynamic button based on the current step -->
+  <button class="start-now" [disabled]="!selectedOption" (click)="startNow()">
+    {{ buttonText }} <i class="fa-solid fa-circle-arrow-right"></i>
+  </button>
+
+  <p class="footer-note" *ngIf="currentStep === 1">
+    نحن هنا لمساعدتك في أختيار منزلك بسهولة وعناية<br> قم بالضغط على زر "بدء" للبدء في العملية.
+  </p>
+  <p class="footer-note" *ngIf="currentStep === 2">
+    تابع لإدخال تفاصيل إضافية بعد اختيار نوع المنزل المناسب.
+  </p>
+</div>

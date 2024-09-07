@@ -1,0 +1,115 @@
+/* Font Face Declarations */
+@font-face {
+  font-family: "Neo Sans Arabic";
+  src: url("/assets/fonts/NeoSansArabic-Regular.woff2") format("woff2"),
+    url("/assets/fonts/NeoSansArabic-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neo Sans Arabic";
+  src: url("/assets/fonts/NeoSansArabic-Bold.woff2") format("woff2"),
+    url("/assets/fonts/NeoSansArabic-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+.icon {
+  position: relative; /* or absolute depending on your layout */
+  top: 0.5rem; /* Adjust this value to move it down/up */
+  left: 0.5rem; /* Adjust this value to move it left/right */
+  width: 3.2%;
+}
+
+/* Headers and Bold Text */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Neo Sans Arabic", sans-serif;
+  text-align: right; /* Ensure headers are aligned to the right */
+}
+
+h3 {
+  color: #183b56;
+  margin-bottom: 1rem;
+  font-size: x-large;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: end;
+  direction: right;
+  width: 12em;
+  margin-left: 0.8rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+  direction: rtl;
+  text-align: right;
+  margin-right: 5rem;
+  color: #464e5f;
+  font-size: large;
+}
+
+ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+ul li {
+  position: relative; /* Ensure position context for ::before */
+  padding-right: 1rem; /* Add padding to make space for the icon */
+  margin-bottom: 1rem; /* Add space between list items */
+}
+
+/* Add styles for the checkmark icon with circular background */
+ul li::before {
+  content: "✔"; /* Unicode or emoji for the checkmark */
+  color: #1e90ff; /* Icon color */
+  position: absolute; /* Positioning relative to the list item */
+  right: 0; /* Align to the right */
+  margin-right: -2.5rem; /* Position the icon inside the padding */
+  width: 2rem; /* Width of the circle */
+  height: 2rem; /* Height of the circle */
+  display: flex; /* Flexbox to center the icon inside the circle */
+  align-items: center; /* Vertically center the icon */
+  justify-content: center; /* Horizontally center the icon */
+  background: linear-gradient(
+    to right,
+    rgba(9, 119, 248, 0.2),
+    rgba(86, 164, 255, 0.2)
+  ); /* Circular gradient background */
+  border-radius: 50%; /* Make the background circular */
+}
+
+h5 {
+  color: #83899f;
+  font-size: large;
+  font-weight: 550;
+  margin-right: 2rem;
+}
+h4 {
+  color: #83899f;
+  font-size: medium;
+  font-weight: 500;
+  width: 50%;
+  font-size: 1.5rem;
+  margin-left: 17rem;
+}
+
+li {
+  color: #83899f;
+  font-size: medium;
+  font-weight: bold;
+  size: 5rem;
+}

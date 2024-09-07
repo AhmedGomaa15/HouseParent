@@ -1,0 +1,36 @@
+.campaign-page-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+  max-height: 10%;
+}
+
+.campaign-method-section,
+.campaign-options-section {
+  width: 47.2%;
+  min-height: 39rem;
+}
+
+.campaign-method-section {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 1rem;
+  border-radius: 0.45rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.campaign-options-section {
+  padding: 1rem;
+  border-radius: 0.45rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    45deg,
+    rgba(9, 119, 248, 0.2) 0%,
+    rgba(255, 255, 255, 1) 25%, /* Start of the wider white section */
+    rgba(255, 255, 255, 1) 75%, /* End of the wider white section */
+    rgba(9, 119, 248, 0.2) 100%
+);
+
+
+}

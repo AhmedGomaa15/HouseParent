@@ -1,0 +1,14 @@
+<div class="prob-container">
+  <h1 class="title">قم بكتابة وصف منزل أحلامك</h1>
+
+  <label for="shortDescription">وصف مختصر عن المنزل</label>
+  <input id="shortDescription" type="text" placeholder="مثال: فيلا قريبة من التجمع الخامس" class="input-box" />
+
+  <label for="detailedDescription">اكتب تعبيرك عن المنزل</label>
+  <div class="editor">
+    <!-- Angular Editor for rich text editing -->
+    <angular-editor [(ngModel)]="htmlContent" [config]="editorConfig"></angular-editor>
+  </div>
+
+  <button class="next-step-btn">الخطوة التالية</button>
+</div>
