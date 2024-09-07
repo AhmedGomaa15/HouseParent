@@ -1,17 +1,75 @@
+/* Font Face Declarations */
+@font-face {
+  font-family: "Neo Sans Arabic";
+  src: url("/assets/fonts/NeoSansArabic-Regular.woff2") format("woff2"),
+    url("/assets/fonts/NeoSansArabic-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neo Sans Arabic";
+  src: url("/assets/fonts/NeoSansArabic-Bold.woff2") format("woff2"),
+    url("/assets/fonts/NeoSansArabic-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+.close-btn {
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  border: 2px solid rgba(244, 244, 244, 1);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -2rem;
+  color: rgba(132, 146, 158, 1);
+  font-size: medium;
+  font-size: 1.5rem;
+}
+.close-btn:hover {
+  color: rgba(255, 75, 85, 1);
+}
+
+.back-btn {
+  position: absolute; /* Allows positioning based on the container */
+  right: 2rem; /* Adjust based on how far from the right edge you want it */
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  border: none; /* Removes the border */
+  background-color: transparent; /* Sets the background color to gray */
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(131, 137, 159, 1); /* Sets the text color; adjust if needed */
+  font-size: medium;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
 .prob-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f5f8ff;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  height: 120%;
+  padding: 2rem;
+  border-radius: 0.45rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    45deg,
+    rgba(9, 119, 248, 0.2) 0%,
+    rgba(255, 255, 255, 1) 25%,
+    rgba(255, 255, 255, 1) 75%,
+    rgba(9, 119, 248, 0.2) 100%
+  );
 }
 
 .title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #000;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
   text-align: right;
 }
 
